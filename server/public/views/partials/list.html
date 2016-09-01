@@ -1,0 +1,11 @@
+<h1>All The Super Heroes</h1>
+<div = "heroList" >
+  <ul ng-repeat = "hero in heroes">
+    <li>Hero Alias: {{hero.alias}}</li>
+    <li>First Name: {{hero.firstN}}</li>
+    <li>Last Name: {{hero.lastN}}</li>
+    <li>City: {{hero.city}}</li>
+    <li>Super Ability: {{hero.superAbility}}</li>
+    <button class="delete" ng-click="deleteHero(hero._id)">Delete</button>
+  </ul>
+</div>>

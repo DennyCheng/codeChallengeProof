@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Super Heroes!</title>
+    <script src="/vendor/angular.min.js"></script>
+    <script type="text/javascript" src="/vendor/angular-route.min.js"></script>
+    <script src="/scripts/app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link rel="stylesheet" href="/vendor/normalize.css" />
+    <link rel="stylesheet" href="/vendor/skeleton.css" />
+    <link rel="stylesheet" href="/styles/stylesheet.css" />
+    <script type="text/javascript" src="/scripts/controllers/hero-controller.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/list-controller.js"></script>
+  </head>
+  <body ng-app="myApp">
+    <main class="container" ng-controller="HeroController">
+      <h1>Heroes Heroes Heroes</h1>
+      <!-- Submit a book -->
+      <li><a href="#hero">Heros</a></li>
+      <li><a href="#list">List</a></li>
+        <main ng-view></main>
+
+      <!-- See submitted books -->
+
+    </main>
+  </body>
+</html>

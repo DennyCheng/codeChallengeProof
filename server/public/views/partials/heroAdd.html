@@ -1,0 +1,35 @@
+<h1>Add a Super Hero</h1>
+<section id="heroSubmission" class="row">
+  <h2>Submit a Super Hero!</h2>
+  <form id="heroForm">
+    <div class="row">
+      <div class="three columns">
+        <label for="alias">Alias:</label>
+        <input type="text" id="currentAlias" name="alias" ng-model="newHero.alias" />
+      </div>
+
+      <div class="three columns">
+        <label for="firstN">First Name:</label>
+        <input type="text" id="currentfirstN" name="firstN" ng-model="newHero.firstN" />
+      </div>
+
+      <div class="three columns">
+        <label for="lastN">Last Name:</label>
+        <input type="text" id="currentlastN" name="lastN" ng-model="newHero.lastN" />
+      </div>
+
+      <div class="three columns">
+        <label for="city">City:</label>
+        <input type="text" id="currentcity" name="city" ng-model="newHero.city" />
+      </div>
+
+      <div class ="three columns">
+      <select name="superAbility" ng-model="superAbility">
+      <option value="">Choose an Ability</option>
+      <option ng-repeat="ability in abilities" value="{{ability}}">{{ability}}</option>
+      </select>
+      <button ng-click="submitNewHero()">Submit</button>
+      </div>
+    </div>
+  </form>
+</section>
